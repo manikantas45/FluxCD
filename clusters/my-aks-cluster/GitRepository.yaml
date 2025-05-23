@@ -1,0 +1,11 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: flux-demo
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  url: https://github.com/manikantas45/FluxCD.git
+  branch: main
+  ref:
+    branch: main

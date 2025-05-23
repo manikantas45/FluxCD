@@ -1,0 +1,13 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: infra
+  namespace: mani-demo 
+spec:
+  interval: 1m0s
+  path: ./clusters/my-aks-cluster
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-demo
+  targetNamespace: mani-demo
