@@ -2,7 +2,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   namespace: mani-demo
-  name: flux-role
+  name: deployment-demo
 rules:
 - apiGroups: ["apps"]
   resources: ["deployments", "replicasets"]

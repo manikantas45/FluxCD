@@ -4,6 +4,7 @@ metadata:
   name: infra
   namespace: mani-demo 
 spec:
+  serviceAccountName: deployment
   interval: 1m0s
   path: ./clusters/my-aks-cluster
   prune: true
