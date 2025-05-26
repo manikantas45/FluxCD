@@ -5,7 +5,7 @@ metadata:
   namespace: mani-demo
 subjects:
 - kind: ServiceAccount
-  name: flux-applier
+  name: deployment
   namespace: mani-demo
 roleRef:
   kind: Role
